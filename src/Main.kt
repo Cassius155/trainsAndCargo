@@ -67,6 +67,7 @@ fun setTransportArea(stations: Array<Station>, start: Int): Unit{
 }
 
 fun getStartStation(stations: Any): Int{
+    //Finds the starting station and returns its index, or -1 if it does not exist
     val stationArray = stations as? Array<Station>
     if(stationArray != null){
         for(i in stationArray){
